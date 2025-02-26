@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "mJUYFM3c8rg=",
+  "success": true,
+  "projectFilePath": "/Users/yunusemrecoskun/RiderProjects/Goals/WebApplication1/WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "/Users/yunusemrecoskun/.nuget/packages/microsoft.aspnetcore.openapi/9.0.1/microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "/Users/yunusemrecoskun/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
