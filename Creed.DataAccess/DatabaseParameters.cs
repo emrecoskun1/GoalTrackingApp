@@ -8,7 +8,11 @@ public class DatabaseParameters: List<DatabaseParameter>
 {
     public DatabaseParameter this[string name]{
          get {
-             return this.Find(p => p.Name == name);
+             var parameter = this.Find(p => p.Name == name);
+             if (parameter == null)
+                 throw new NotSupportedException();
+             
+             return parameter;
          }  
          set {
              var index = this.FindIndex(p => p.Name == name);

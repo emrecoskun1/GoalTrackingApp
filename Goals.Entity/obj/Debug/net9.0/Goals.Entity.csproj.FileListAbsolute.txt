@@ -13,3 +13,8 @@
 /Users/yunusemrecoskun/RiderProjects/Goals/Goals.Entity/obj/Debug/net9.0/refint/Goals.Entity.dll
 /Users/yunusemrecoskun/RiderProjects/Goals/Goals.Entity/obj/Debug/net9.0/Goals.Entity.pdb
 /Users/yunusemrecoskun/RiderProjects/Goals/Goals.Entity/obj/Debug/net9.0/ref/Goals.Entity.dll
+/Users/yunusemrecoskun/RiderProjects/Goals/Goals.Entity/bin/Debug/net9.0/Creed.Common.dll
+/Users/yunusemrecoskun/RiderProjects/Goals/Goals.Entity/bin/Debug/net9.0/Goals.Common.dll
+/Users/yunusemrecoskun/RiderProjects/Goals/Goals.Entity/bin/Debug/net9.0/Creed.Common.pdb
+/Users/yunusemrecoskun/RiderProjects/Goals/Goals.Entity/bin/Debug/net9.0/Goals.Common.pdb
+/Users/yunusemrecoskun/RiderProjects/Goals/Goals.Entity/obj/Debug/net9.0/Goals.Entity.sourcelink.json

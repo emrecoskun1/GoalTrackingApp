@@ -10,3 +10,4 @@
 /Users/yunusemrecoskun/RiderProjects/Goals/Creed.DataAccess/obj/Debug/net9.0/refint/Creed.DataAccess.dll
 /Users/yunusemrecoskun/RiderProjects/Goals/Creed.DataAccess/obj/Debug/net9.0/Creed.DataAccess.pdb
 /Users/yunusemrecoskun/RiderProjects/Goals/Creed.DataAccess/obj/Debug/net9.0/ref/Creed.DataAccess.dll
+/Users/yunusemrecoskun/RiderProjects/Goals/Creed.DataAccess/obj/Debug/net9.0/Creed.DataAccess.sourcelink.json

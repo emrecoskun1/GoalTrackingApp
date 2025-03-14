@@ -7,12 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
-      <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+      <ProjectReference Include="..\Creed.Common\Creed.Common.csproj" />
+      <ProjectReference Include="..\Creed.DataAccess\Creed.DataAccess.csproj" />
+      <ProjectReference Include="..\Goals.Entity\Goals.Entity.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Goals.Entity\Goals.Entity.csproj" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.2" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,8 @@
 namespace Goals.Common.Dtos;
 
-public class UserOfGoalDto
+public class GoalsOfUserDto
 {
+    public int GoalId { get; set; }
+    public int UserId { get; set; }
     
 }
