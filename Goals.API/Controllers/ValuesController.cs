@@ -55,7 +55,7 @@ public class ValuesController : ControllerBase
         {
             new Claim(ClaimTypes.Name, userGet.UserName), 
         };
-        var token = new JwtSecurityToken(_token.Issuer, _token.Audience, claims, expires: DateTime.Now.AddMinutes(30), signingCredentials: credentials);
+        var token = new JwtSecurityToken(_token.Issuer, _token.Audience, claims, expires: DateTime.Now.AddMinutes(1), signingCredentials: credentials);
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
