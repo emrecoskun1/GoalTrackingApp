@@ -1,7 +1,12 @@
+using Creed.Common;
+using Goals.Common.Dtos;
 using Goals.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Goals.API.Controllers;
+
+[ApiController]
+[Route("[controller]/[action]")]
 
 public class UserController:ControllerBase
 {
@@ -12,7 +17,8 @@ public class UserController:ControllerBase
         _userService = us;
     }
 
-    public IActionResult Get()
+    [HttpGet]
+    public IActionResult GetUserByAuth(UserDto dto)
     {
         _userService.GetUsers();
         return Ok();

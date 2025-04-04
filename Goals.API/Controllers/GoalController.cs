@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Goals.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("[controller]/[action]")]
 public class GoalController : ControllerBase
 {
     private GoalService _goalService;
@@ -19,7 +19,7 @@ public class GoalController : ControllerBase
         _goalService = gs;
     }
     
-    [Authorize]
+
     [HttpGet]
     public IActionResult Get()
     {

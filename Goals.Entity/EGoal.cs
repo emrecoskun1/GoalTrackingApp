@@ -58,7 +58,15 @@ public class EGoal
         try
         {
             ResponseMessage response = new ResponseMessage();
-            response.Success = true;
+            if (response==null)
+            {
+                response.Success = true;
+            }
+            else
+            {
+                response.Success = false;
+            }
+            
 
             var parameters = new DatabaseParameters();
 

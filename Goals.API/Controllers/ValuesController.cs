@@ -42,7 +42,7 @@ public class ValuesController : ControllerBase
 
     private object DoAuthentication(GetUserDto userGet)
     {
-        return UsersList.Users.FirstOrDefault(x => x.UserName.ToLower() == userGet.UserName && x.UserPassword == userGet.UserPassword);
+        return UsersList.Users.FirstOrDefault(x => x.UserEmail.ToLower() == userGet.UserEmail && x.UserPassword == userGet.UserPassword);
         }
 
     private string? CreateToken(GetUserDto userGet)
@@ -53,9 +53,9 @@ public class ValuesController : ControllerBase
         
         var claims = new[]
         {
-            new Claim(ClaimTypes.Name, userGet.UserName), 
+            new Claim(ClaimTypes.Name, userGet.UserEmail), 
         };
-        var token = new JwtSecurityToken(_token.Issuer, _token.Audience, claims, expires: DateTime.Now.AddMinutes(1), signingCredentials: credentials);
+        var token = new JwtSecurityToken(_token.Issuer, _token.Audience, claims, expires: DateTime.Now.AddMinutes(30), signingCredentials: credentials);
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }

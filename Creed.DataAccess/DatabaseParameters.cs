@@ -31,7 +31,12 @@ public class DatabaseParameters: List<DatabaseParameter>
 
     public void Add(string name, object value, DbType type = DbType.String)
     {
-        Add(new DatabaseParameter(name, value, type));
+        // if (!name.StartsWith("@"))
+        // {
+        //     name = "@" + name;
+        // }
+        // Add(new DatabaseParameter(name, value, type));
+        
     }
     
     public bool HasParameter(string name)
